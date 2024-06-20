@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+.titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@-webkit-keyframes pulsate-fwd {
+0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+@keyframes pulsate-fwd {
+0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+
+
+.pulsate-fwd {
+	animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+
+.strokeme {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body{
+
+    margin: 0%;
+}
+
+#mainContainer{
+    width: 100%;
+    height: 100vh;  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#textContainer{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    rotate: -2deg;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+
+.rainbow-background {
+    width: 100%;
+    height: 100%;
+    animation: rainbow 10s infinite linear;
+  }
